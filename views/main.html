@@ -1,0 +1,59 @@
+
+<html>
+    <head>
+                    <meta charset="utf-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+                    <link rel="stylesheet" href="/css/bootstrap.min.css">
+                    <title>Currency Convertor</title>
+    </head>
+        <body>
+                <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+                        <a class="navbar-brand" href="/">📐Currency Convertor</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        
+                        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                            <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/">Calculate <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/info">Info</a>
+                            </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <br>
+                        <br>
+            <form method="POST" action="/converted">
+                <center><table>
+                       <tr><th colspan="2" ><b><h1>Currency Convertor</b></h1><br></th></tr>
+                        <td style="width:90%;"><input type="number" name="input" size="3" min="0" value="" />
+                            <select name="currency1" class="currency1">           
+                                <option value="1" selected>ดอลลาร์สหรัฐ</option>
+                                <option value="2">ยูโร</option>
+                                <option value="3">บาท</option>
+                              </select>
+                              <br>
+                              &Tab; &Tab; <b>To.</b>
+                             <select name="currency2" class="currency2">           
+                                <option value="1" selected>บาท</option>
+                                <option value="2">ยูโร</option>
+                                <option value="3">ดอลลาร์สหรัฐ</option>
+                            </select>
+                        </td></tr> <br>
+                        <tr><td colspan="2"><div style="float:left;"><br><input type="submit" value="Convert" /></div></div><div style="clear:both;"></div></td></tr>
+                        </table></center>
+    
+               
+        </form>
+
+
+    <!-- Optional JavaScript -->
+    <script src="/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    
+    </body>
+    </html>
